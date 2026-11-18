@@ -1,0 +1,28 @@
+System Administration & Troubleshooting Runbook (Version 4.2)
+
+1. Authentication & Security Services
+Incident Code ERR_AUTH_9021:
+Symptoms: Users receive HTTP 401 Unauthorized after 15 minutes of inactivity. The access token has expired and the client application failed to trigger the silent refresh rotation.
+Resolution: Verify that the identity provider client configuration has refresh token rotation enabled. On the gateway host, execute 'systemctl restart auth-proxy-v2' and flush the local redis credential cache.
+
+Incident Code ERR_AUTH_9022:
+Symptoms: Users receive HTTP 403 Forbidden with payload 'invalid_signature'. Occurs when client submits a JWT signed by an expired or rotated signing key.
+Resolution: Re-sync the JSON Web Key Set (JWKS) by pinging the endpoint '/.well-known/jwks.json'. If key mismatch persists, trigger RS256 keypair regeneration via vault cli: 'vault write auth/pki/rotate'.
+
+Incident Code ERR_NET_7014:
+Symptoms: WebSocket connections drop intermittently with code 1006 under high network congestion.
+Resolution: Increase proxy keepalive timeout from 30s to 120s in '/etc/nginx/nginx.conf'. Enable TCP keepalive probes on port 443.
+
+2. Data Center Infrastructure & Hardware Allocations
+Rack RACK-DAL-04B:
+Houses 8 Dell PowerEdge R750 servers dedicated exclusively to the Redis session store cluster. Configured with 512GB ECC DDR4 RAM each, running dual 25GbE network interface cards. This cluster maintains zero-persistence, high-throughput session state for the US-East region.
+
+Rack RACK-DAL-04C:
+Houses primary PostgreSQL relational database nodes and read replicas handling transactional billing data and invoice generation. Uses hardware RAID 10 NVMe storage with automated hourly WAL archiving to Amazon S3 bucket 'finance-db-backups-iad'.
+
+Rack RACK-FRA-01A:
+European gateway node hosting Kafka message brokers for GDPR audit logs and asynchronous event telemetry.
+
+3. Performance Optimization Guidelines
+Memory Leak Triage in Service Daemon (INC-48821):
+A known memory fragmentation issue affects microservices compiled with glibc older than 2.35 when handling streaming gRPC responses on port 8089. Under sustained load, process RSS memory climbs monotonically until killed by the OS Out-Of-Memory (OOM) killer. Workaround: Set the environment variable 'MALLOC_TRIM_THRESHOLD_=65536' in the systemd service unit file to force glibc to release free memory back to the Linux kernel.

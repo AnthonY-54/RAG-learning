@@ -1,0 +1,58 @@
+The Indian Space Research Organisation (ISRO) is the national space agency of India. 
+It is headquartered in Bengaluru, Karnataka, and operates under the Department of Space, 
+which is directly overseen by the Prime Minister of India.
+
+ISRO was founded on 15 August 1969 by Vikram Sarabhai, who is widely regarded as the 
+father of the Indian space programme. Sarabhai recognized early that space technology 
+could play a transformative role in national development. The agency started modestly, 
+with its first rocket launch site established at Thumba, near Thiruvananthapuram, chosen 
+because of its proximity to the Earth's magnetic equator.
+
+ISRO's first satellite, Aryabhata, was launched on 19 April 1975, making India one of 
+the early developing nations to enter the space age. The satellite was named after the 
+ancient Indian mathematician and astronomer. The launch was carried out from a Soviet 
+Cosmodrome, as India did not yet have its own launch vehicles.
+
+A major milestone came with the development of the Polar Satellite Launch Vehicle (PSLV). 
+The PSLV had its first successful flight in 1994 and has since become one of the world's 
+most reliable launch vehicles. It has launched satellites for dozens of countries and is 
+known for its versatility and high success rate.
+
+In 2008, ISRO launched Chandrayaan-1, India's first lunar probe. The mission made a 
+significant scientific discovery: it confirmed the presence of water molecules on the Moon's 
+surface, a finding that reshaped global understanding of lunar resources. This was achieved 
+using the Moon Mineralogy Mapper instrument, provided by NASA.
+
+India's Mars Orbiter Mission, popularly called Mangalyaan, was launched in November 2013 
+and successfully entered Martian orbit in September 2014. India became the first country 
+to reach Mars on its first attempt and the first Asian nation to do so. The mission was 
+completed at a remarkably low cost of approximately 74 million US dollars, far less than 
+comparable missions by other agencies.
+
+Chandrayaan-3 was launched on 14 July 2023. On 23 August 2023, the Vikram lander 
+successfully touched down near the Moon's south pole, making India the fourth country 
+to achieve a soft landing on the Moon and the first to do so at the lunar south pole. 
+The Pragyan rover deployed from Vikram conducted surface experiments and confirmed the 
+presence of sulphur and other elements near the lunar south pole.
+
+ISRO's Geosynchronous Satellite Launch Vehicle (GSLV) was developed to launch heavier 
+communication satellites into geostationary orbits. The GSLV Mark III, also called LVM3, 
+is the agency's heaviest rocket and was used to launch the Chandrayaan-3 mission.
+
+ISRO also operates a constellation of remote sensing satellites under the IRS (Indian 
+Remote Sensing) series and communication satellites under the INSAT and GSAT series. 
+These serve critical national needs including weather forecasting, disaster management, 
+telecommunications, and agricultural monitoring.
+
+India's first human spaceflight programme, Gaganyaan, is currently under development. 
+It aims to send Indian astronauts, known as Gaganauts, to low Earth orbit. The programme 
+involves extensive crew training, development of a human-rated launch vehicle, and an 
+advanced crew module with life support systems.
+
+ISRO has also demonstrated capabilities in reusable launch vehicles and scramjet engine 
+technology, positioning India as a growing force in the global commercial space market 
+through its commercial arm, NewSpace India Limited (NSIL).
+
+The agency's guiding philosophy has always been to use space technology for the benefit 
+of common people, with a focus on practical applications in agriculture, disaster relief, 
+education, and connectivity — particularly for India's vast rural population.
